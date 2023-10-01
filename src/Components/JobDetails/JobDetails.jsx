@@ -4,6 +4,7 @@ import { BsCalendar2Week, BsTelephone } from "react-icons/bs";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from "../../utility/localStorage";
 
 
 
@@ -15,6 +16,7 @@ const JobDetails = () => {
     const { salary, job_title, contact_information, job_description, job_responsibility, educational_requirements, experiences } = job;
 
     const handleApplyJob = () =>{
+        saveJobApplication(parseInt(id));
         toast('You have applied successfully')
     }
 
