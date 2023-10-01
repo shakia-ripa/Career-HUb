@@ -3,7 +3,7 @@ import logo from '../../assets/logo/CareerHub.png';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-10 bg-base-200 text-base-content mt-16">
+            <footer className="footer p-10 bg-base-200 text-base-content">
                 <aside>
                     <img src={logo} alt="" />
                     <p>There are many variations of passages<br />of Lorem Ipsum , but the majority have<br /> suffered alteration in some form.</p>
